@@ -7,6 +7,7 @@
 	font-size: 22px;
 }
 
+/* Place .small-para after .para to take advantage of the rule order because both of them have the same specificity  */
 .small-para {
 	font-size: 14px;
 }
