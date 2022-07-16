@@ -15,21 +15,10 @@ body {
 	color: white;
 	font-size: 32px;
 	font-weight: 900;
-	padding: 16px;
+	padding: 0 16px;
 
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-}
-
-.footer {
-	height: 72px;
-	background: #eee;
-	color: darkmagenta;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 ul {
@@ -39,7 +28,7 @@ ul {
 }
 
 ul li {
-	margin: 24px 0;
+	margin-bottom: 16px;
 }
 
 li a {
@@ -62,29 +51,36 @@ li a:hover {
 .container-main {
 	display: flex;
 	flex: 1;
-	gap: 25px;
+	/* gap: 25px; */
 }
 
 /* container of cards */
 .container-cards {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 25px;
+	/* gap: 25px; */
+	padding: 32px;
 
 	margin: 25px 0;
-}
-
-.container-cards .card {
-	max-width: 200px;
-	height: 300px;
-
-	flex-shrink: 0;
 }
 
 .card {
 	border: 1px solid #eee;
 	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
 	border-radius: 4px;
+	max-width: 200px;
 
-	padding: 32px;
+	flex-shrink: 0;
+	padding: 16px;
+	margin: 16px;
+}
+
+.footer {
+	height: 72px;
+	background: #eee;
+	color: darkmagenta;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
